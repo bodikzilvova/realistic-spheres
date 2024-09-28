@@ -4,7 +4,7 @@
   "homepage": "https://bodikzilvova.github.io/realistic-spheres",
   "description": "",
   "scripts": {
-    "predeploy": "parcel build ./src/index.html --public-url ./",
+    "predeploy": "parcel build ./src/index.html --public-url /realistic-spheres/",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
