@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { RGBELoader } from "three/examples/jsm/Addons.js";
+import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 
 const hdTexttureURL = new URL(
   "../img/MR_INT-003_Kitchen_Pierre.hdr",
@@ -24,7 +24,7 @@ const orbit = new OrbitControls(camera, renderer.domElement);
 camera.position.set(0, 0, 7);
 orbit.update();
 
-renderer.outputEncoding = THREE.sRGBEncoding;
+// renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.8;
 
