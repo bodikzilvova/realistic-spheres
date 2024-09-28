@@ -1,15 +1,19 @@
 {
   "name": "video-11",
   "version": "1.0.0",
+  "homepage": "https://bodikzilvova.github.io/realistic-spheres",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "parcel build ./src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "three": "^0.169.0"
   },
